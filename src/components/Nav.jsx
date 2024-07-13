@@ -8,35 +8,15 @@ function Nav() {
 
   return (
     <>
-      <nav>
-        <div className="bg-white">
-          <div className="d-flex justify-content-between align-items-center py-2 px-4 shadow-sm">
-            {/* Mobile View */}
-            <div className="d-flex d-lg-none align-items-center">
-              <i className="bi bi-list fs-4 me-3"></i>
-              <img
-                src="./src/assets/logo.jpg"
-                className="rounded-circle"
-                style={imgHeight}
-                alt="Profile"
-              />
-              <p className="mt-3 ms-2">Attendance</p>
-            </div>
-
-            {/* Desktop View */}
-            <div className="d-none d-lg-flex justify-content-center align-items-center">
-              <h4>Logo.</h4>
-            </div>
-
-            <div className="d-flex justify-content-center align-items-center">
-              <p className="fs-2 me-4 mb-2">+</p>
-              <img
-                src="./src/assets/profile.jpg"
-                className="rounded-circle"
-                style={imgHeight}
-                alt="Profile"
-              />
-            </div>
+      <nav className="border-b-2 w-full h-14">
+        <div className="flex justify-between items-center">
+          <div className="flex">
+            <i class="fa-solid fa-bars ml-8 mt-4 text-xl"></i>
+            <p className="ml-8 mt-3 text-xl">Classroom</p>
+          </div>
+          <div className="flex">
+            <div className="text-3xl mr-8 mt-1">+</div>
+            <img src="../src/assets/profile.jpg" className="h-9 rounded-full mr-8 mt-2" alt="" />
           </div>
         </div>
       </nav>

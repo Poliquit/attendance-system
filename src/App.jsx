@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from './layout/Navbar'
+import Layoutpage from './layout/Layoutpage'
 
 function App() {
   return (
     <>
-    <Navbar />
+    <Layoutpage />
     </>
   );
 }
