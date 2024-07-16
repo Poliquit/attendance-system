@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Sidebar from "../components/Sidebar";
+import Mainsection from "../components/Mainsection";
 
 function Layoutpage() {
   return (
@@ -10,6 +11,11 @@ function Layoutpage() {
 
         <div className="flex flex-grow">
           <Sidebar />
+
+          {/* Main Section */}
+          <div className="ml-8 mt-10">
+            <Mainsection />
+          </div>
         </div>
       </div>
     </>
